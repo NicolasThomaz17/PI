@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Calculadora</title>
+
+                <script> 
+                var numero1, numero2;
+
+                    function Somar(){
+                     numero1 = Number(document.getElementById('numero1').value);
+                     numero2 = Number(document.getElementById('numero2').value);
+                    
+                    alert (numero1 + numero2);
+                    }
+
+                    function Subtrair(){
+                     numero1 = Number(document.getElementById('numero1').value);
+                     numero2 = Number(document.getElementById('numero2').value);
+                    
+                    
+                    alert (numero1 - numero2);
+                    }
+
+                    function multiplicar(){
+                     numero1 = Number(document.getElementById('numero1').value);
+                     numero2 = Number(document.getElementById('numero2').value);
+                    
+                    
+                    alert (numero1 * numero2);
+                    }
+
+                    function Dividir(){
+                     numero1 = Number(document.getElementById('numero1').value);
+                     numero2 = Number(document.getElementById('numero2').value);
+                    
+                    
+                    alert (numero1 / numero2);
+                    }
+
+                </script>
+    </head>
+<body>
+        <label for = "numero1">Digite o primeiro número: </label>
+            <input type = "text" id = "numero1"  name = "numero2 " placeholder="Número 1" />
+            <br><br>
+            
+                <label for = "numero2" > Digite o segundo número: </label>
+                 
+            <input type="text" id="numero2" name="numero2"  placeholder="Número 2" />
+            <br><br>
+
+            <input type ="button"  onclick="Somar()" value = "Somar" />
+            <input type ="button"  onclick="Subtrair()" value = "Subtrair" />
+            <input type ="button"  onclick="multiplicar()" value = "multiplicar" />
+            <input type ="button"  onclick="Dividir()" value = "Dividir" />
+    
+</body>
+</html>
